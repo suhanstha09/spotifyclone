@@ -20,14 +20,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 22px;
-     position: fixed !important;
+    position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 2000 !important;
 }
 .navcont{
-    position: fixed;
     width: auto;
     display: flex;
     justify-content: flex-start;
@@ -35,12 +34,10 @@ body {
     padding: 0;
 }
 .leftnav {
-    position: fixed;
     display: flex;
     align-items: center;
 }
 .leftnav img {
-    position: fixed;
     margin-left: 01px;
     height: 38px;
     width: auto;
@@ -334,7 +331,6 @@ body {
     padding: 12px 32px;
 }
 
-/* Content Area */
 .content {
     margin-left: 430px;
     margin-top: 70px;
@@ -369,7 +365,6 @@ body {
     color: #fff;
 }
 
-/* Card Grid */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -464,7 +459,6 @@ body {
     white-space: nowrap;
 }
 
-/* Album Covers */
 .album-cover {
     aspect-ratio: 1;
     border-radius: 4px;
@@ -475,7 +469,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Artist Cards */
 .artist-card .artist-image {
     aspect-ratio: 1;
     border-radius: 50%;
@@ -486,7 +479,6 @@ body {
     margin-bottom: 16px;
 }
 
-/* Bottom Banner */
 .bottom-banner {
     position: fixed;
     bottom: 5px;
@@ -557,7 +549,6 @@ body {
     text-decoration: underline;
 }
 
-/* Social Icons */
 .footer-social {
     display: flex;
     gap: 16px;
@@ -587,7 +578,6 @@ body {
     height: 20px;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     max-width: 1400px;
     margin: 0 auto;
@@ -598,4 +588,285 @@ body {
 .footer-bottom p {
     color: #b3b3b3;
     font-size: 14px;
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 300px;
+    }
+    
+    .content {
+        margin-left: 320px;
+    }
+    
+    .main-footer {
+        margin-left: 320px;
+    }
+    
+    .nav-left {
+        margin-left: 320px;
+    }
+    
+    .search-bar {
+        width: 350px;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-social {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 16px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .navbar {
+        padding: 0 16px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin: 10px;
+        border-radius: 15px;
+        max-width: calc(100% - 20px);
+    }
+    
+    .content {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 16px;
+    }
+    
+    .main-footer {
+        margin-left: 0;
+        padding: 50px 16px 120px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .nav-left {
+        margin-left: 10px;
+    }
+    
+    .nav-right a:not(.login-btn) {
+        display: none;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .search-bar {
+        width: 250px;
+        padding: 10px 16px;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
+    }
+    
+    .bottom-banner {
+        left: 10px;
+        right: 10px;
+        padding: 12px 16px;
+    }
+    
+    .banner-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .banner-content h3 {
+        font-size: 12px;
+    }
+    
+    .banner-content p {
+        font-size: 11px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        height: 60px;
+        padding: 0 10px;
+    }
+    
+    .leftnav img {
+        height: 30px;
+    }
+    
+    .sidebar {
+        margin: 5px;
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .content {
+        padding: 12px;
+        margin-top: 5px;
+    }
+    
+    .main-footer {
+        padding: 40px 12px 100px;
+    }
+    
+    .nav-left {
+        margin-left: 5px;
+        gap: 4px;
+    }
+    
+    .search-bar {
+        width: 180px;
+        padding: 8px 12px;
+    }
+    
+    .search-bar input {
+        font-size: 12px;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    
+    .nav-right {
+        gap: 10px;
+    }
+    
+    .login-btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    
+    .section-header h2 {
+        font-size: 20px;
+    }
+    
+    .show-all {
+        font-size: 12px;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 12px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+    }
+    
+    .card p {
+        font-size: 12px;
+    }
+    
+    .bottom-banner {
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        padding: 10px 12px;
+    }
+    
+    .banner-content h3 {
+        font-size: 11px;
+    }
+    
+    .banner-content p {
+        font-size: 10px;
+    }
+    
+    .banner-content .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .footer-container {
+        gap: 24px;
+    }
+    
+    .footer-column h3 {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
+    .footer-column ul li a {
+        font-size: 14px;
+    }
+    
+    .footer-bottom p {
+        font-size: 12px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+    .search-bar {
+        width: 140px;
+    }
+    
+    .nav-left {
+        gap: 2px;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .login-btn {
+        padding: 6px 16px;
+        font-size: 11px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .sidebar {
+        height: auto;
+        max-height: 70vh;
+    }
+    
+    .navbar {
+        height: 50px;
+    }
 }
