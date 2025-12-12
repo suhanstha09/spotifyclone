@@ -14,64 +14,421 @@
                     <img src="./images/Spotify-Logo.png" alt="spotify">
                 </div>
             </div>
-             <div class="nav-left">
-                    <button class="nav-btn">🏠</button>
-                    <div class="search-bar">
-                        <span>🔍</span>
-                        <input type="text" placeholder="What do you want to play?">
+            <div class="nav-left">
+                <button class="nav-btn">🏠</button>
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#">Premium</a>
+                <a href="#">Support</a>
+                <a href="#">Download</a>
+                <span class="divider">|</span>
+                <a href="#">Install app</a>
+                <a href="#">Sign up</a>
+                <button class="btn login-btn">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-section1">
+            <h3><span>Your Library</span><span>+</span></h3>
+            <p></p>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Create your first playlist</h3>
+            <p>It's easy, we'll help you</p>
+            <button class="btn">Create playlist</button>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Let's find some podcasts to follow</h3>
+            <p>We'll keep you updated on new episodes</p>
+            <button class="btn">Browse podcasts</button>
+        </div>
+
+        <footer class="sidebar-footer">
+            <div class="footer-links">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+            </div>
+            <div class="footer-links1">
+                <a href="#" class="cookies">Cookies</a>
+            </div>
+        </footer>
+
+        <button class="language-btn">
+            <span class="globe-icon">🌐</span>
+            English
+        </button>
+    </aside>
+    <main class="main-content">
+         <div class="content">
+               
+                <!-- Trending Songs -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Trending songs</h2>
+                        <a href="#" class="show-all">Show all</a>
                     </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #4ade80, #22d3ee);">
+                                <span>🎵</span>
+                            </div>
+                            <h4>FABLA</h4>
+                            <p>Flipperachi</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: #1a1a1a;">
+                                <span>🎤</span>
+                            </div>
+                            <h4>BALLIN</h4>
+                            <p>🔒 Jamesy</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #1e3a5f, #2d5a7b);">
+                                <span>💀</span>
+                            </div>
+                            <h4>Gehra Hua</h4>
+                            <p>Shashwat Singh, Arijit Singh...</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: #f5f5dc;">
+                                <span>👤</span>
+                            </div>
+                            <h4>CHANEL</h4>
+                            <p>E Tyla</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #d97706, #92400e);">
+                                <span>🎬</span>
+                            </div>
+                            <h4>Raanjhanaa</h4>
+                            <p>Sabin Rai & The Pharaoh</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #7c3aed, #db2777);">
+                                <span>🎧</span>
+                            </div>
+                            <h4>Kafle</h4>
+                            <p>Jhuma Limbu</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popular Artists -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Popular artists</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: linear-gradient(135deg, #7c2d12, #dc2626);">
+                                <span>👤</span>
+                            </div>
+                            <h4>Pritam</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: linear-gradient(135deg, #78350f, #b45309);">
+                                <span>🎸</span>
+                            </div>
+                            <h4>Sushant KC</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: #0a0a0a;">
+                                <span>🎤</span>
+                            </div>
+                            <h4>John Rai</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: linear-gradient(135deg, #047857, #10b981);">
+                                <span>👤</span>
+                            </div>
+                            <h4>Purna Rai</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: linear-gradient(135deg, #b45309, #ea580c);">
+                                <span>🎵</span>
+                            </div>
+                            <h4>Arijit Singh</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="artist-image" style="background: #f5f5f5;">
+                                <span>🎸</span>
+                            </div>
+                            <h4>Atif Aslam</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popular Albums -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Popular albums and singles</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #6b2d1c, #1a1a1a);">
+                                <span>📀</span>
+                            </div>
+                            <h4>Roka Yo Samay</h4>
+                            <p>Tribal Rain</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: #1a1a1a;">
+                                <span>🦅</span>
+                            </div>
+                            <h4>Monkey Temple Nepal</h4>
+                            <p>Monkey Temple Nepal</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #1e3a5f, #0c4a6e);">
+                                <span>🌊</span>
+                            </div>
+                            <h4>HIT ME HARD AND SOFT</h4>
+                            <p>Billie Eilish</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #3f3f46, #71717a);">
+                                <span>🏙️</span>
+                            </div>
+                            <h4>Maya Ma (2018 Compilation)</h4>
+                            <p>Sushant KC</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: linear-gradient(135deg, #78716c, #a8a29e);">
+                                <span>⚔️</span>
+                            </div>
+                            <h4>Dhanyavaad II</h4>
+                            <p>Sabin Rai & The Pharaoh</p>
+                        </div>
+                        <div class="card">
+                            <div class="album-cover" style="background: #1a1a1a;">
+                                <span>🎭</span>
+                            </div>
+                            <h4>Ghar Gaun</h4>
+                            <p>AXIX</p>
+                        </div>
+                    </div>
+                </section>
+                 <!-- Radio -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Popular Radio</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-image purple">
+                                <div class="card-content">
+                                    <h3>Top Songs<br>Global</h3>
+                                    <p>📊 Weekly Music Charts</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your weekly update of the most played tracks...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image red">
+                                <div class="card-content">
+                                    <h3>Top Songs<br>USA</h3>
+                                    <p>📊 Weekly Music Charts</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your weekly update of the most played tracks...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image teal">
+                                <div class="card-content">
+                                    <h3>Top 50</h3>
+                                    <p>GLOBAL</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image pink">
+                                <div class="card-content">
+                                    <h3>Top 50</h3>
+                                    <p>USA</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image green">
+                                <div class="card-content">
+                                    <h3>Viral 50</h3>
+                                    <p>GLOBAL</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most viral tracks right...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image red-blue">
+                                <div class="card-content">
+                                    <h3>Viral 50</h3>
+                                    <p>USA</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most viral tracks right...</p>
+                        </div>
+                    </div>
+                </section>
+
+                 <!-- Featured Charts -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Featured Charts</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-image purple">
+                                <div class="card-content">
+                                    <h3>Top Songs<br>Global</h3>
+                                    <p>📊 Weekly Music Charts</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your weekly update of the most played tracks...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image red">
+                                <div class="card-content">
+                                    <h3>Top Songs<br>USA</h3>
+                                    <p>📊 Weekly Music Charts</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your weekly update of the most played tracks...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image teal">
+                                <div class="card-content">
+                                    <h3>Top 50</h3>
+                                    <p>GLOBAL</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image pink">
+                                <div class="card-content">
+                                    <h3>Top 50</h3>
+                                    <p>USA</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most played tracks right...</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image green">
+                                <div class="card-content">
+                                    <h3>Viral 50</h3>
+                                    <p>GLOBAL</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">Your daily update of the most viral tracks right...</p>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+            <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">For the Record</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Communities</h3>
+            <ul>
+                <li><a href="#">For Artists</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Vendors</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Useful links</h3>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Free Mobile App</a></li>
+                <li><a href="#">Popular by Country</a></li>
+                <li><a href="#">Import your music</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Spotify Plans</h3>
+            <ul>
+                <li><a href="#">Premium Individual</a></li>
+                <li><a href="#">Premium Duo</a></li>
+                <li><a href="#">Premium Family</a></li>
+                <li><a href="#">Premium Student</a></li>
+                <li><a href="#">Spotify Free</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Spotify AB</p>
+    </div>
+</footer>
+</main>
+
+            <!-- Bottom Banner -->
+            <div class="bottom-banner">
+                <div class="banner-content">
+                    <div>
+                        <h3>Preview of Spotify</h3>
+                        <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                    </div>
+                    <button class="btn">Sign up free</button>
                 </div>
-                <div class="nav-right">
-                    <a href="#">Premium</a>
-                    <a href="#">Support</a>
-                    <a href="#">Download</a>
-                    <span class="divider">|</span>
-                    <a href="#">Install app</a>
-                    <a href="#">Sign up</a>
-                    <button class="btn login-btn">Log in</button>
-                </div>
-        </div>
-        </header>
-        <aside class="sidebar">
-           
-
-            <div class="sidebar-section1">
-                <h3><span>Your Library</span><span>+</span></h3>
-                <p></p>
             </div>
-
-            <div class="sidebar-section">
-                <h3>Create your first playlist</h3>
-                <p>It's easy, we'll help you</p>
-                <button class="btn">Create playlist</button>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Let's find some podcasts to follow</h3>
-                <p>We'll keep you updated on new episodes</p>
-                <button class="btn">Browse podcasts</button>
-            </div>
- <footer class="sidebar-footer">
-        <div class="footer-links">
-            <a href="#">Legal</a>
-            <a href="#">Safety & Privacy Center</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookies</a>
-        </div>
-        <div class="footer-links">
-            <a href="#">About Ads</a>
-            <a href="#">Accessibility</a>
-        </div>
-        <div class="footer-links1">
-            <a href="#" class="cookies">Cookies</a>
-        
-    </footer>
-
-    <button class="language-btn">
-        <span class="globe-icon">🌐</span>
-        English
-    </button>
-        </aside>
     
 </body>
 </html>
